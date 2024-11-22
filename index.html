@@ -50,15 +50,13 @@
                      <ul class="lan">
                         <li><i class="fa fa-globe" aria-hidden="true"></i> Language : <img src="images/fleg.png" alt="#" /></li>
                      </ul>
-                     <form action="#">
-                        <div class="select-box">
-                           <label for="select-box1" class="label select-box1"><span class="label-desc">English</span> </label>
-                           <select id="select-box1" class="select">
-                              <option value="Choice 1">English</option>
-                              <option value="Choice 1">Spanish</option>
-                           </select>
-                        </div>
-                     </form>
+                     <div class="select-box">
+                        <label for="select-box1" class="label select-box1"><span class="label-desc">English</span> </label>
+                        <select id="select-box1" class="select">
+                           <button onclick="changeLanguage('es')">Español</button>
+                           <button onclick="changeLanguage('en')">English</button>
+                        </select>
+                     </div>
                   </div>
                   <div class="col-md-6 col-sm-6 ">
                      <ul class="social_icon1">
@@ -226,7 +224,7 @@
          </div>
          <div class="row">
             <div class="col-md-8 offset-md-2">
-               <form id="post_form" class="contact_form">
+               <form id="post_form" class="contact_form" action="https://formspree.io/f/mvgoqyrj" method="POST">
                   <div class="row">
                      <div class="col-md-12 ">
                         <input class="contact_control" placeholder=" Nombre y Apellido" type="type" name="Name">
@@ -241,7 +239,7 @@
                         <textarea class="textarea" placeholder="Message" type="type" Message="Name">Mensaje </textarea>
                      </div>
                      <div class="col-md-12">
-                        <button class="send_btn">enviar</button>
+                        <button class="send_btn" type="submit">enviar</button>
                      </div>
                </form>
             </div>
@@ -315,6 +313,7 @@
    </footer>
    <!-- end footer -->
    <!-- Javascript files-->
+   <script src="js/script.js"></script>
    <script src="js/jquery.min.js"></script>
    <script src="js/popper.min.js"></script>
    <script src="js/bootstrap.bundle.min.js"></script>
@@ -324,5 +323,4 @@
    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
    <script src="js/custom.js"></script>
 </body>
-
 </html>
